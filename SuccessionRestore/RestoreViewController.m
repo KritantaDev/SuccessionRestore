@@ -529,6 +529,7 @@
                                             @"--exclude=/devicetree",
                                             @"--exclude=/kernelcache",
                                             @"--exclude=/ramdisk",
+                                            @"--exclude=/usr/share/firmware",
                                             @"/private/var/MobileSoftwareUpdate/mnt1/.",
                                             @"/", nil];
         if ([[NSFileManager defaultManager] fileExistsAtPath:@"/Library/Caches/xpcproxy"] || [[NSFileManager defaultManager] fileExistsAtPath:@"/var/tmp/xpcproxy"]) {
