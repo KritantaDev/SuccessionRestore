@@ -77,15 +77,13 @@
             break;
         }
         case 4: {
-            cell.textLabel.text = @"\"Hacktivate\" device after restore (delete Setup.app and move activation records to /var/mobile/Media/activation_records.plist) [Coming soon]";
+            cell.textLabel.text = @"Delete Setup.app after restore [WARNING! Only use this if you know what you're doing. This can cause irreperable device damage]";
             cell.textLabel.numberOfLines = 0;
             [cell.textLabel sizeToFit];
-            /*
             UISwitch *hacktivationSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
             cell.accessoryView = hacktivationSwitch;
             [hacktivationSwitch setOn:[[_successionPrefs objectForKey:@"hacktivation"] boolValue] animated:NO];
             [hacktivationSwitch addTarget:self action:@selector(hacktivationSwitchChanged) forControlEvents:UIControlEventValueChanged];
-             */
             break;
         }
         case 5: {
